@@ -1,0 +1,7 @@
+{
+  "param_error_code": "E_BAD_PARAM",
+  "shape_error_code": "E_BAD_SHAPE",
+  "block": 2,
+  "left": [1, 2, 3, 4],
+  "right": [1, 9, 3, 4]
+}
