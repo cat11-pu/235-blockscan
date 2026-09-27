@@ -1,8 +1,14 @@
-// block.js：切块与取和（基线：一律给空表与零）
+// block.js：切块与取和
 export function cut(values, block) {
-  return [];
+  const total = values.length;
+  const size = Math.floor(total / block);
+  const parts = [];
+  for (let i = 0; i < block; i += 1) {
+    parts.push(values.slice(i * size, (i + 1) * size));
+  }
+  return parts;
 }
 
 export function totalOf(values) {
-  return 0;
+  return values.reduce((sum, value) => sum + value, 0);
 }
